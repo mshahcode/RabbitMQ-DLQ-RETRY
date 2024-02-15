@@ -7,6 +7,14 @@ spring:
     host: localhost
     username: guest
     password: guest
+    listener:
+      simple:
+        retry:
+          enabled: true
+          initial-interval: 3s
+          max-attempts: 5
+          max-interval: 5s
+          multiplier: 1
 
 server:
   ssl:
