@@ -1,0 +1,18 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+  rabbitmq:
+    host: localhost
+    username: guest
+    password: guest
+
+server:
+  ssl:
+    enabled: false
+
+rabbitmq:
+  queue:
+    test: testQueue
+    testDlq: testQueueDlq
